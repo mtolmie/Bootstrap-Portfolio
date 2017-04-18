@@ -52,7 +52,7 @@ h3 {
 
 /* header */
 
-#masthead {
+.navbar {
   position: fixed;
   z-index: 99;
   width: 100%;

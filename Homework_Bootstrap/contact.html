@@ -11,15 +11,16 @@
 
 <body>
 
-  <header id="masthead">
+  <header class="navbar-inverse">
+  <div class ="container">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="container">
       <a href="index.html" id="logo">Michael Tolmie</a>
       <nav>
         <ul class="nav nav-pills">
-  <a<li role="presentation" class="active"><a href="#">About</a></li>
-  <a<li role="presentation"><a href="#">Portfolio</a></li>
-  <a<li role="presentation"><a href="#">Contact</a></li>
+  <li><a role="presentation" class="active"><a href="#">About</a></li>
+  <li><a role="presentation"><a href="#">Portfolio</a></li>
+  <li><a role="presentation"><a href="#">Contact</a></li>
 </ul>
       </nav>
     </div>
@@ -32,28 +33,37 @@
       <form id="contact-form">
         <ul>
           <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+  <label for="name" class="col-lg-2 control-label">Name</label>
+            <div class="col-lg-10">
+            <input type="text" type="text" class="form-control" id="name" name="name" placeholder="John Smith" required="required">
+               </div>
           </li>
           <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+  <label for="email">Email</label>
+            <input type="email" class="col-lg-2 control-label name="email" placeholder="example@gmail.com" required="required">
           </li>
           <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
+            <div class="form-group">
+    <label for="Message" class="col-lg-2 control-label">Message</label>
+      <input type="text" type="text" class="form-control" 
+               </div>
+     
           </li>
         </ul>
+        
+
+
         <input type="submit">
 
-        <div class="alert alert-danger" role="alert">
-  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-  <span class="sr-only">Error:</span>
-  Enter a valid email address
-</div>
-      </form>
 
-    </section>
+    
+        
+
+
+
+
+
+      </section>
 
     <section class="sidebar">
       <div id="connect">
